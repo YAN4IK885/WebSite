@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuning Service</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -9,110 +10,59 @@
 
 <header>
     <nav class="top-nav">
-        <ul>
-            <li class="top-nav"><a href="index.html">Головна</a></li>
-            <li class="top-nav"><a href="about.html">Про нас</a></li>
-            <li class="top-nav"><a href="services.html">Послуги</a></li>
-            <li class="top-nav"><a href="contacts.html">Контакти</a></li>
+        <div class="logo">
+            <h2>Sticpee Tuning</h2>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
         </ul>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 </header>
 
 <section>
     <div class="banner">
         <img src="images/banner.png" alt="Banner">
-        <h1 class="banner_heading"> Sticpee Car Tuning Service </h1>
+        <h1 class="banner_heading">Sticpee Car Tuning Service</h1>
     </div>
 </section>
 
 <main>
     <article class="news1">
-        <h3> <b> Новини </b> </h3>
+        <h3>Новини</h3>
         <div class="news-item">
-            <h4> <b> 1. Відкриття нового сервісу </b> </h4>
-            <p> <i> 01.01.2021 </i> </p>
-            <p> <strong> Sticpee Car Tuning Service </strong> — це сервіс автотюнінгу, який надає широкий спектр послуг автовласникам. </p>
+            <h4>1. Відкриття нового сервісу</h4>
+            <p><i>01.01.2021</i></p>
+            <p><strong>Sticpee Car Tuning Service</strong> — це сервіс автотюнінгу, який надає широкий спектр послуг автовласникам, включаючи чіп-тюнінг, доопрацювання двигунів, налаштування підвісок та багато іншого.</p>
         </div>
     </article>
 </main>
 
 <footer>
     <div>
-        <h3> <b> Контакти </b> </h3>
-        <p> <strong> Адреса: </strong> м. Львів, вул. Шевченка, 1 </p>
-        <p> <strong> Телефон: </strong> +380 67 123 45 67 </p>
-        <p> <strong> Email: </strong> <a href="mailto:SticpeeCar@tuning.cum">З'єднатися з нами</a> </p>
+        <h3>Контакти</h3>
+        <p><strong>Адреса:</strong> м. Львів, вул. Шевченка, 1</p>
+        <p><strong>Телефон:</strong> +380 67 123 45 67</p>
+        <p><strong>Email:</strong> <a href="mailto:SticpeeCar@tuning.cum">З'єднатися з нами</a></p>
     </div>
 </footer>
 
-<!--<div>
-    <h3>  <b> Перелік схожих сайтів </b> </h3>
-    <ul>
-        <li><a href="https://tuning-baza.ua/">TuningBaza</a></li>
-        <li><a href="https://ddaudio.com.ua/">Ddaudio</a></li>
-    </ul>
-    <img src="images/TuningBaza.png" alt="TuningBaza" height="50%" width="50%">
-</div>
-<div>
-    <table border="2">
-        <thead>
-        <tr>
-            <th>Тег</th>
-            <th>Опис</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>&lt;title&gt;</td>
-            <td>Задає заголовок документа</td>
-        </tr>
-        <tr>
-            <td>&lt;body&gt;</td>
-            <td>Містить основний контент документа</td>
-        </tr>
-        <tr>
-            <td>&lt;div&gt;</td>
-            <td>Блочний елемент для групування контенту</td>
-        </tr>
-        <tr>
-            <td>&lt;h1&gt;</td>
-            <td>Заголовок першого рівня</td>
-        </tr>
-        <tr>
-            <td>&lt;p&gt;</td>
-            <td>Параграф тексту</td>
-        </tr>
-        <tr>
-            <td>&lt;strong&gt;</td>
-            <td>Виділення тексту жирним шрифтом</td>
-        </tr>
-        <tr>
-            <td>&lt;i&gt;</td>
-            <td>Виділення тексту курсивом</td>
-        </tr>
-        <tr>
-            <td>&lt;ul&gt;</td>
-            <td>Не нумерований список</td>
-        </tr>
-        <tr>
-            <td>&lt;li&gt;</td>
-            <td>Елемент списку</td>
-        </tr>
-        <tr>
-            <td>&lt;a&gt;</td>
-            <td>Гіперпосилання</td>
-        </tr>
-        <tr>
-            <td>&lt;img&gt;</td>
-            <td>Зображення</td>
-        </tr>
-        </tbody>
-        <tfoot>
-        <tr>
-            <td colspan="2">Кінець таблиці з тегами HTML</td>
-        </tr>
-        </tfoot>
-    </table>
-</div>-->
+<script>
+    // Burger Menu Toggle
+    const burger = document.getElementById('burger');
+    const menu = document.querySelector('.top-nav .menu');
+
+    burger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+</script>
+
 </body>
 </html>
