@@ -1,0 +1,38 @@
+
+@use '../base/variables';
+
+nav.top-nav {
+  background-color: variables.$primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav.top-nav .logo h2 {
+  color: variables.$white-color;
+}
+
+nav.top-nav .menu {
+  display: flex;
+  gap: 20px;
+}
+
+nav.top-nav .menu li a {
+  padding: 10px 20px;
+  color: variables.$white-color;
+  font-size: 18px;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background-color: variables.$white-color;
+}

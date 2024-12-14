@@ -1,0 +1,54 @@
+/* Загальний стиль */
+
+@use '../base/variables';
+
+body, header, section, main, footer {
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: variables.$dark-color;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: variables.$primary-color; /* Ефект при наведенні */
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  background-color: variables.$white-color; /* Задаємо світлий фон для всього тіла */
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 20px;
+}

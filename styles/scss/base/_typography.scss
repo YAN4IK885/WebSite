@@ -1,0 +1,26 @@
+// _typography.scss
+
+@use 'variables';
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: variables.$text-color;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: variables.$primary-color; // Ефект при наведенні
+  }
+}
+
+li {
+  list-style: none;
+}

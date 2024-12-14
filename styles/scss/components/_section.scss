@@ -1,0 +1,13 @@
+// _section.scss
+
+@use '../base/variables';
+
+section {
+  max-height: 300px;
+}
+
+section div img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}

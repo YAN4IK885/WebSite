@@ -1,0 +1,18 @@
+// _banner.scss
+
+@use '../base/variables';
+
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner_heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: variables.$white-color;
+  font-size: 2rem;
+}
