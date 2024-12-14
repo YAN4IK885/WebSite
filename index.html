@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuning Service</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
 </head>
 <body>
 
 <header>
     <nav class="top-nav">
         <div class="logo">
-            <h2>Sticpee Tuning</h2>
+            <li><a href="index.html"><h2>Sticpee Tuning</h2></a></li>
         </div>
         <ul class="menu">
             <li><a href="index.html">Головна</a></li>
             <li><a href="about.html">Про нас</a></li>
             <li><a href="services.html">Послуги</a></li>
             <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="login.html">Увійти</a></li>
         </ul>
         <div class="burger" id="burger">
             <span></span>
@@ -43,6 +46,11 @@
             <p><i>01.01.2021</i></p>
             <p><strong>Sticpee Car Tuning Service</strong> — це сервіс автотюнінгу, який надає широкий спектр послуг автовласникам, включаючи чіп-тюнінг, доопрацювання двигунів, налаштування підвісок та багато іншого.</p>
         </div>
+        <div class="news-item">
+            <h4>2. Спеціальна пропозиція на чіп-тюнінг</h4>
+            <p><i>15.10.2023</i></p>
+            <p>Отримайте знижку 20% на чіп-тюнінг до кінця місяця! Не пропустіть можливість покращити продуктивність вашого автомобіля.</p>
+        </div>
     </article>
 </main>
 
@@ -54,16 +62,6 @@
         <p><strong>Email:</strong> <a href="mailto:SticpeeCar@tuning.cum">З'єднатися з нами</a></p>
     </div>
 </footer>
-
-<script>
-    // Burger Menu Toggle
-    const burger = document.getElementById('burger');
-    const menu = document.querySelector('.top-nav .menu');
-
-    burger.addEventListener('click', () => {
-        menu.classList.toggle('active');
-    });
-</script>
 
 </body>
 </html>
