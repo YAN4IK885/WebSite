@@ -2,19 +2,36 @@
 
 @use '../base/variables';
 
+.gear-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.gear-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.gear-button img {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+}
+
 .style-panel {
-  margin-top: 20px;
-  padding: 10px;
+  display: none; /* Initially hidden */
+  position: absolute;
+  bottom: 60px; /* Position above the gear button */
+  right: 0;
   background-color: variables.$white-color;
   border: 1px solid variables.$white-color;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+}
 
-  h3 {
-    margin: 0 0 10px;
-  }
-
-  label {
-    display: block;
-    margin: 5px 0;
-  }
+.style-panel h3 {
+  margin: 0 0 10px;
 }
