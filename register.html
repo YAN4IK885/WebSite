@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація - Tuning Service</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="top-nav">
+        <div class="logo">
+            <a href="index.html"><h2>Sticpee Tuning</h2></a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="login.html">Увійти</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<main class="container mt-5">
+    <h2 class="text-center">Реєстрація нового облікового запису</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Ім'я</label>
+            <input type="text" class="form-control" id="name" placeholder="Введіть ваше ім'я" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email адреса</label>
+            <input type="email" class="form-control" id="email" placeholder="Введіть email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Пароль</label>
+            <input type="password" class="form-control" id="password" placeholder="Введіть пароль" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Підтвердження пароля</label>
+            <input type="password" class="form-control" id="confirm-password" placeholder="Підтвердіть пароль" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Зареєструватися</button>
+    </form>
+    <p class="mt-3 text-center">Вже маєте обліковий запис? <a href="login.html">Увійти</a></p>
+</main>
+
+<footer>
+    <div>
+        <h3>Контакти</h3>
+        <p><strong>Адреса:</strong> м. Львів, вул. Шевченка, 1</p>
+        <p><strong>Телефон:</strong> +380 67 123 45 67</p>
+        <p><strong>Email:</strong> <a href="mailto:SticpeeCar@tuning.cum">З'єднатися з нами</a></p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
