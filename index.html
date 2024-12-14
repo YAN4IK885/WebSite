@@ -52,6 +52,36 @@
             <p>Отримайте знижку 20% на чіп-тюнінг до кінця місяця! Не пропустіть можливість покращити продуктивність вашого автомобіля.</p>
         </div>
     </article>
+
+    <div class="style-panel">
+        <h3>Панель керування стилями</h3>
+        <label for="textColor">Кольор тексту:</label>
+        <button onclick="changeTextColor('red')">Червоний</button>
+        <button onclick="changeTextColor('blue')">Синій</button>
+        <button onclick="changeTextColor('green')">Зелений</button>
+
+        <label for="fontSize">Розмір шрифту:</label>
+        <select id="fontSize" onchange="changeFontSize(this.value)">
+            <option value="16px">16px</option>
+            <option value=" 20px">20px</option>
+            <option value="24px">24px</option>
+            <option value="28px">28px</option>
+        </select>
+
+        <label for="containerWidth">Ширина контейнера:</label>
+        <input type="range" id="containerWidth" min="300" max="1200" value="600" onchange="changeContainerWidth(this.value)">
+
+        <label for="containerHeight">Висота контейнера:</label>
+        <input type="range" id="containerHeight" min="200" max="800" value="400" onchange="changeContainerHeight(this.value)">
+
+        <label for="backgroundColor">Колір фону:</label>
+        <button onclick="changeBackgroundColor('lightgray')">Світло-сірий</button>
+        <button onclick="changeBackgroundColor('white')">Білий</button>
+        <button onclick="changeBackgroundColor('blue')">Синій</button>
+
+        <label for="customValue">Введіть власне значення:</label>
+        <input type="text" id="customValue" placeholder="Введіть значення" oninput="applyCustomValue(this.value)">
+    </div>
 </main>
 
 <footer>
